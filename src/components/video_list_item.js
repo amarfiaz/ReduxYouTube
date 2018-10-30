@@ -1,6 +1,8 @@
 import React from 'react';
 
-const VideoListItem = ({ video }) => {
+const VideoListItem = (props) => {
+    const video = props.video;
+    const onVideoSelect = props.onVideoSelect;
     const imageURL = video.snippet.thumbnails.default.url;
 
     return (
